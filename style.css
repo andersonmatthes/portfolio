@@ -1,0 +1,397 @@
+/* Reset & Variáveis de Cor */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-main: #0b0f19;
+    --bg-card: #111827;
+    --bg-card-hover: #1f2937;
+    --accent-purple: #8b5cf6;
+    --accent-blue: #3b82f6;
+    --text-light: #f3f4f6;
+    --text-muted: #9ca3af;
+    --border-color: #1f2937;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: rgba(11, 15, 25, 0.85);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: var(--accent-purple);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.btn-contact {
+    background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+    color: #fff !important;
+    padding: 0.6rem 1.3rem;
+    border-radius: 20px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-contact:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 120px 20px 90px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(139, 92, 246, 0.1);
+    color: var(--accent-purple);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #a855f7, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    margin-bottom: 35px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background-color: #fff;
+    color: #000;
+    padding: 0.85rem 1.8rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+}
+
+.btn-whatsapp {
+    background-color: #25d366;
+    color: #fff;
+    padding: 0.85rem 1.8rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1eb954;
+    transform: translateY(-2px);
+}
+
+/* Seção Habilidades */
+.skills {
+    padding: 80px 8%;
+    background-color: #0e1320;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 30px 20px;
+    border-radius: 12px;
+    width: 230px;
+    text-align: center;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-purple);
+}
+
+.skill-card i {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.skill-card p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* Seção Projetos */
+.projects {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-purple);
+}
+
+.project-img {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.project-card:hover .project-img img {
+    transform: scale(1.05);
+}
+
+.project-img .tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: rgba(11, 15, 25, 0.8);
+    backdrop-filter: blur(8px);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.project-info {
+    padding: 25px;
+}
+
+.project-info h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.tech-tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.tech-tags span {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-muted);
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+}
+
+.btn-project {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: gap 0.2s;
+}
+
+.btn-project:hover {
+    gap: 12px;
+    color: var(--accent-purple);
+}
+
+/* Rodapé */
+footer {
+    background-color: #060911;
+    border-top: 1px solid var(--border-color);
+    padding: 80px 20px 30px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.footer-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.footer-container p {
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+.btn-whatsapp-large {
+    background-color: #25d366;
+    color: #fff;
+    padding: 1rem 2.2rem;
+    border-radius: 35px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-whatsapp-large:hover {
+    background-color: #1eb954;
+    transform: scale(1.05);
+}
+
+.copyright {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
