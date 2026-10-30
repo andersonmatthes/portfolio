@@ -1,100 +1,316 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anderson Matthes | Desenvolvedor Front-End</title>
+
+    <meta name="description" content="Anderson Matthes - Desenvolvimento de sites modernos, responsivos e profissionais para empresas e pequenos negócios.">
+
+    <meta name="theme-color" content="#0b0d12">
+
+    <title>Anderson Matthes | Criação de Sites</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome para Ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
-    <!-- Cabeçalho -->
-    <header>
-        <div class="logo">&lt;Anderson<span>Matthes</span> /&gt;</div>
-        <nav>
-            <a href="#about">Sobre</a>
-            <a href="#skills">Habilidades</a>
-            <a href="#projects">Projetos</a>
-            <a href="#contact" class="btn-contact">Falar Comigo</a>
-        </nav>
+    <header class="header">
+        <div class="container header-content">
+
+            <a href="#inicio" class="logo">
+                AM<span>.</span>
+            </a>
+
+            <nav class="navigation" aria-label="Navegação principal">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato" class="nav-button">Vamos conversar</a>
+            </nav>
+
+        </div>
     </header>
 
-    <!-- Seção Principal (Hero) -->
-    <section id="about" class="hero">
-        <div class="hero-badge"><i class="fa-solid fa-code"></i> Desenvolvedor Front-End</div>
-        <h1>Criando experiências digitais <span class="gradient-text">incríveis e modernas</span></h1>
-        <p>Especializado na criação de Landing Pages de alta conversão, sites institucionais sob medida e interfaces responsivas com foco em performance.</p>
-        <div class="hero-btns">
-            <a href="#projects" class="btn-primary">Ver Projetos <i class="fa-solid fa-arrow-down"></i></a>
-            <a href="https://wa.me/5551981383573?text=Olá%20Anderson!%20Vi%20o%20teu%20portfólio%20e%20gostaria%20de%20orçar%20um%20site." target="_blank" class="btn-whatsapp">
-                <i class="fa-brands fa-whatsapp"></i> Conversar no WhatsApp
-            </a>
-        </div>
-    </section>
+    <main>
 
-    <!-- Seção Habilidades / Tecnologias -->
-    <section id="skills" class="skills">
-        <h2>Minhas Habilidades</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <i class="fa-brands fa-html5" style="color: #e34f26;"></i>
-                <h3>HTML5</h3>
-                <p>Estrutura semântica e acessível.</p>
-            </div>
-            <div class="skill-card">
-                <i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i>
-                <h3>CSS3</h3>
-                <p>Estilização moderna, Flexbox e Grid.</p>
-            </div>
-            <div class="skill-card">
-                <i class="fa-solid fa-mobile-screen-button" style="color: #a855f7;"></i>
-                <h3>Design Responsivo</h3>
-                <p>Perfeito em telemóveis, tablets e PCs.</p>
-            </div>
-            <div class="skill-card">
-                <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
-                <h3>JavaScript</h3>
-                <p>Interatividade e dinamismo na web.</p>
-            </div>
-        </div>
-    </section>
+        <section class="hero" id="inicio">
+            <div class="container hero-content">
 
-    <!-- Seção de Projetos -->
-    <section id="projects" class="projects">
-        <h2>Projetos em Destaque</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?q=80&w=800" alt="Landing Page Marcenaria">
-                    <span class="tag">Landing Page</span>
-                </div>
-                <div class="project-info">
-                    <h3>Marcenaria Arte & Madeira</h3>
-                    <p>Landing page completa e responsiva desenvolvida para captação de clientes de móveis sob medida via WhatsApp.</p>
-                    <div class="tech-tags">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>WhatsApp API</span>
+                <div class="hero-text">
+
+                    <span class="tag">
+                        DESENVOLVIMENTO WEB
+                    </span>
+
+                    <h1>
+                        Seu negócio merece uma
+                        <span>presença digital profissional.</span>
+                    </h1>
+
+                    <p>
+                        Desenvolvo sites modernos, responsivos e
+                        estratégicos para empresas que desejam
+                        fortalecer sua presença na internet.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projetos" class="button button-primary">
+                            Conhecer projetos
+                        </a>
+
+                        <a href="#contato" class="button button-secondary">
+                            Solicitar orçamento
+                        </a>
+
                     </div>
-                    <a href="../SITE-MARCENARIA/index.html" target="_blank" class="btn-project">Ver Projeto Ao Vivo <i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Rodapé / Contato -->
-    <footer id="contact">
-        <div class="footer-container">
-            <h2>Pronto para tirar o seu projeto do papel?</h2>
-            <p>Entre em contacto comigo e vamos construir uma presença digital de impacto para o seu negócio.</p>
-            <a href="https://wa.me/5551981383573?text=Olá%20Anderson!%20Gostaria%20de%20fazer%20um%20projeto%20contigo." target="_blank" class="btn-whatsapp-large">
-                <i class="fa-brands fa-whatsapp"></i> Iniciar Conversa no WhatsApp
-            </a>
-            <div class="copyright">
-                <p>&copy; 2026 Anderson Matthes. Todos os direitos reservados.</p>
+                    <div class="hero-info">
+                        <span>✓ Design responsivo</span>
+                        <span>✓ Atendimento personalizado</span>
+                    </div>
+
+                </div>
+
+                <div class="hero-card">
+                    <div class="code-window">
+
+                        <div class="window-header">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="code-content">
+                            <p class="code-purple">&lt;website&gt;</p>
+
+                            <p>
+                                <span class="code-blue">nome:</span>
+                                "Seu negócio"
+                            </p>
+
+                            <p>
+                                <span class="code-blue">design:</span>
+                                "Moderno"
+                            </p>
+
+                            <p>
+                                <span class="code-blue">layout:</span>
+                                "Responsivo"
+                            </p>
+
+                            <p>
+                                <span class="code-blue">objetivo:</span>
+                                "Gerar clientes"
+                            </p>
+
+                            <p class="code-purple">&lt;/website&gt;</p>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
+        </section>
+
+        <section class="about section" id="sobre">
+            <div class="container">
+
+                <span class="section-label">QUEM SOU</span>
+
+                <h2>
+                    Tecnologia e criatividade
+                    para transformar negócios.
+                </h2>
+
+                <p class="section-description">
+                    Sou Anderson Matthes e estou construindo minha
+                    trajetória no desenvolvimento web. Meu objetivo
+                    é ajudar pequenos negócios e empresas a terem
+                    sites profissionais, acessíveis e funcionais.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="services section" id="servicos">
+            <div class="container">
+
+                <span class="section-label">O QUE FAÇO</span>
+
+                <h2>Serviços</h2>
+
+                <p class="section-description">
+                    Soluções digitais para apresentar melhor
+                    sua empresa e facilitar o contato com clientes.
+                </p>
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+                        <div class="service-icon">01</div>
+                        <h3>Landing Pages</h3>
+                        <p>
+                            Páginas focadas em apresentar produtos,
+                            serviços e gerar contatos.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">02</div>
+                        <h3>Sites Institucionais</h3>
+                        <p>
+                            Apresente sua empresa, seus serviços,
+                            diferenciais e informações.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">03</div>
+                        <h3>Sites Responsivos</h3>
+                        <p>
+                            Experiência adaptada para computadores,
+                            tablets e celulares.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="projects section" id="projetos">
+            <div class="container">
+
+                <span class="section-label">MEU TRABALHO</span>
+
+                <h2>Projetos demonstrativos</h2>
+
+                <p class="section-description">
+                    Alguns exemplos de interfaces que estou
+                    desenvolvendo para meu portfólio.
+                </p>
+
+                <div class="projects-grid">
+
+                    <article class="project-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1000&q=85"
+                            alt="Interior de uma barbearia moderna"
+                            loading="lazy"
+                        >
+
+                        <div class="project-content">
+
+                            <span class="project-type">
+                                PROJETO DEMONSTRATIVO
+                            </span>
+
+                            <h3>Barber Club</h3>
+
+                            <p>
+                                Conceito de site para barbearia,
+                                com apresentação de serviços,
+                                preços e contato pelo WhatsApp.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Responsivo</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="project-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85"
+                            alt="Projeto arquitetônico de residência"
+                            loading="lazy"
+                        >
+
+                        <div class="project-content">
+
+                            <span class="project-type">
+                                PROJETO DEMONSTRATIVO
+                            </span>
+
+                            <h3>Studio Arquitetura</h3>
+
+                            <p>
+                                Conceito de página para apresentar
+                                projetos, serviços e informações
+                                de um escritório de arquitetura.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Responsivo</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact section" id="contato">
+            <div class="container contact-content">
+
+                <span class="section-label">VAMOS CONVERSAR?</span>
+
+                <h2>
+                    Vamos criar algo
+                    <span>para seu negócio?</span>
+                </h2>
+
+                <p>
+                    Entre em contato para conversar sobre
+                    seu projeto e solicitar um orçamento.
+                </p>
+
+                <a
+                    href="https://wa.me/5551999999999?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20um%20site."
+                    class="button button-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Conversar pelo WhatsApp
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <a href="#inicio" class="logo">AM<span>.</span></a>
+
+            <p>
+                © 2026 Anderson Matthes.
+                Todos os direitos reservados.
+            </p>
+
+            <a href="#inicio">Voltar ao topo ↑</a>
+
         </div>
     </footer>
 
